@@ -1,0 +1,63 @@
+.navbar{
+  display: grid;
+  /* position: fixed; */
+  grid-template-columns: 1fr 1fr 4fr 1fr 0.5fr;
+  /* background-color: rgb(223, 223, 223); */
+  height: 70px;
+}
+.smilepay{
+    color: rgb(0, 53, 35);
+    font-size: larger;
+}
+.search{
+    margin-left: auto;
+    padding-right: 5px;
+    padding-left: 10PX;
+}
+.Dashboard{
+    color: rgb(0, 53, 35);
+    
+    padding-left: 10PX;
+    font-weight: bold;
+    font-size: larger;
+}
+    
+
+.icon-button{
+    color: rgb(0, 165, 110);
+    border-radius: 20px;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 70px;
+    background-color: rgb(223, 223, 223);
+    width: 100px;
+}
+.sidebar-link{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.sidebar-lin{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-link:hover{
+    background-color: lightgray;
+}
+.sidebar-link div{
+font-size: smaller;
+}
+/* body{
+    padding-left: 60px;
+} */
+.new{
+    margin-left: 100px;
+}
