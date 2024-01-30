@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Registeration Page</title>
+</head>
+<body style="background-color: rgb(191, 194, 207);">
+    <div >
+    <nav class="navbar "  style="background-color: rgb(26, 10, 95);">
+        <img src="data:image/jpeg;base64,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
+        =" width="70px;">
+        <button class="navbar-toggler"  style="border-color: aliceblue; padding-right: 10px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color: bisque;" ></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div style="padding-left: 9%;padding-top: 2%;"><h1> Application form: </h1></div>
+
+      <div class="container px-2  shadow-lg" style="background-color:rgb(148, 151, 163); ">
+        
+                <!-- row starts -->
+                <div class="row g-3 my-3">
+                    <!-- col 1 -->
+                    <div class="col-md-4">
+                      <div class="p-3 bg-white shadow-lg d-flex flex-column justify-content-around align-items-left rounded" >
+                            
+                          <div class="row align-items-center p-4">
+                            <div class="col-md-3 ps-4">
+              
+                              <h6 class="mb-0">Full name</h6>
+              
+                            </div>
+                            <div class="col-md-8 pe-6">
+              
+                              <input type="text" class="form-control form-control-lg" />
+              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                     <!-- col 2 -->
+                    <div class="col-md-4">
+                      <div class="p-3 bg-white shadow-lg d-flex flex-column justify-content-around align-items-left rounded" >
+                      <div class="row align-items-center py-4">
+                        <div class="col-md-3 ps-4">
+          
+                          <h6 class="mb-0">Email address</h6>
+          
+                        </div>
+                        <div class="col-md-9 pe-5">
+          
+                          <input type="email" class="form-control form-control-" placeholder="example@example.com" />
+          
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!-- col 3 -->
+                    <div class="col-md-4">
+                        <div class="p-3 bg-white shadow-lg d-flex flex-column justify-content-around align-items-left rounded" >
+                            
+                          <div class="row align-items-center pt-4 pb-4">
+                            <div class="col-md-3 ps-4">
+              
+                              <h6 class="mb-0">Phone number</h6>
+              
+                            </div>
+                            <div class="col-md-9 pe-5">
+              
+                              <input type="text" class="form-control form-control-lg" placeholder="Enter 10 digits" />
+              
+                            </div>
+                          
+                        </div>
+                       </div>
+                    </div>
+                    <!-- col 4 -->
+                    
+
+                    <div class="row g-3 my-3" style="margin-left:4px;">
+                      <!-- col 1 -->
+                      <div class="col-md-4">
+                        <div class="p-3 bg-white shadow-lg d-flex flex-column justify-content-around align-items-left rounded" >
+                            
+                          <div class="row align-items-center pt-2 pb-2">
+                            <div class="col-md-3 ps-3">
+              
+                              <h6 class="mb-0">Addresss </br> (with district)</h6>
+              
+                            </div>
+                            <div class="col-md-9 pe-5">
+              
+                              <input type="text" class="form-control form-control-lg" placeholder="current address" />
+              
+                            </div>
+                          
+                        </div>
+                       </div>
+                      </div>
+                       <!-- col 2 -->
+                      <div class="col-md-4">
+                          <div class="p-3 bg-white shadow-lg d-flex flex-column   rounded" >
+                              
+                            <div class="row align-items-center  ">
+                              <div class="col-md-3 ps-4">
+                
+                                <h6 >Others</h6>
+                
+                              </div>
+                              <div class="col-md-9 pe-3">
+                
+                                <textarea class="form-control" rows="3" placeholder="Message sent to the employer"></textarea>
+            
+                              </div>
+                            </div>
+                         </div>
+                      </div>
+                      <!-- col 3 -->
+                      <div class="col-md-4">
+                          <div class="p-3 bg-white shadow-lg d-flex flex-column justify-content-around align-items-left rounded" >
+                            <div class="row align-items-center py-2">
+                              <div class="col-md-3 ps-3">
+                
+                                <h6 class="mb-0">Upload CV</h6>
+                
+                              </div>
+                              <div class="col-md-9 pe-9">
+                
+                                <input class="form-control form-control-sm" id="formFileLg" type="file" />
+                                <div class="small text-muted ">Upload your CV/Resume with max file
+                                  size 50 MB</div>
+                
+                              </div>
+                            </div>
+                         </div>
+                      </div>
+                      
+                </div>
+
+
+
+                <div class="row g-3 my-2" style="margin-left:4px;">
+                  <!-- col 1 -->
+                  <div class="col-md-4">
+                      <div class="p-3  d-flex flex-column justify-content-around align-items-left rounded" >
+                          
+                        <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                          <label class="form-check-label text-grey" for="form2Example3">
+                            I do accept the <a href="#!" class="text-black"><u>Terms and Conditions</u></a> of your
+                            site.
+                          </label>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="p-3  d-flex flex-column justify-content-around align-items-left rounded" >
+                        
+                      <div >
+                        <button type="submit" class="btn btn-primary btn-md shadow-lg">Send application</button>
+                      </div>
+                    </div>
+                </div>
+                  
+            </div>
+    
+        
+      </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
